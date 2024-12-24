@@ -7,9 +7,9 @@
         </h3>
 
         <div class="meta">
-            {%- if page.date %}
-            <time>{{ page.date | date(format="%Y-%m-%d") }}</time>
-            {% endif -%}
+            <!--{%- if page.date %}-->
+            <!--<time>{{ page.date | date(format="%Y-%m-%d") }}</time>-->
+            <!--{% endif -%}-->
             <br />
             <!--<span>{{ page.reading_time }} minute read</span>-->
             {% if page.draft %}
@@ -96,9 +96,9 @@
             {{ post_macros::page_header(title=page.title) }}
 
             <div class="meta">
-                {% if page.date %}
-                Posted on <time>{{ page.date | date(format="%Y-%m-%d") }}</time>
-                {% endif %}
+                <!--{% if page.date %}-->
+                <!--Posted on <time>{{ page.date | date(format="%Y-%m-%d") }}</time>-->
+                <!--{% endif %}-->
 
                 {% if page.draft %}
                 <span class="draft-label">DRAFT</span>
@@ -188,9 +188,9 @@
             </h1>
 
             <div class="meta">
-                {%- if page.date %}
-                <time>{{ page.date | date(format="%Y-%m-%d") }}</time>
-                {% endif -%}
+                <!--{%- if page.date %}-->
+                <!--<time>{{ page.date | date(format="%Y-%m-%d") }}</time>-->
+                <!--{% endif -%}-->
                 {% if page.draft %}
                 <span class="draft-label">DRAFT</span>
                 {% endif %}
@@ -219,7 +219,7 @@
     {% for page in pages %}
     <li class="post">
         <a href="{{ page.permalink }}">{{ page.title }}</a>
-        <span class="meta">{{ page.date | date(format="%Y-%m-%d") }}</span>
+        <!--<span class="meta">{{ page.date | date(format="%Y-%m-%d") }}</span>-->
     </li>
     {% endfor %}
 </ul>
